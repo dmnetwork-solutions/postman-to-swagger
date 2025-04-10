@@ -1,0 +1,24 @@
+{
+  "name": "swagger-postman-service",
+  "version": "1.0.0",
+  "description": "A service to dynamically serve Postman API collections using Swagger UI.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Dennis Kamau -- DM Network Solutions ltd -- KE",
+  "license": "ISC",
+  "dependencies": {
+    "@readme/postman-to-openapi": "^4.1.0",
+    "body-parser": "^1.20.2",
+    "chokidar": "^3.5.3",
+    "express": "^4.18.2",
+    "js-yaml": "^4.1.0",
+    "lodash.debounce": "^4.0.8",
+    "multer": "^1.4.5-lts.1",
+    "postman-to-openapi": "^1.7.3",
+    "proper-lockfile": "^4.1.2",
+    "swagger-ui-express": "^5.0.0"
+  }
+}

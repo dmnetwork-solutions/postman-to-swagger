@@ -1,0 +1,11 @@
+services:
+  swagger-postman-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001" # Map container port 3001 to host port 3001
+    volumes:
+      - ./postman_collection.json:/app/postman_collection.json # Mount the Postman JSON file
+      - ./openapi.json:/app/openapi.json # Mount the OpenAPI JSON file
+    restart: unless-stopped
